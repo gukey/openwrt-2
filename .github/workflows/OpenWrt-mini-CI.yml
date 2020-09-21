@@ -53,7 +53,7 @@ jobs:
           ./scripts/feeds install -a
       - name: Generate configuration file
         run: |
-          curl -fsSL https://raw.githubusercontent.com/siropboy/other/master/patch/x86-64/minialldrv.config > .config
+          curl -fsSL https://github.com/gukey/openwrt-2/blob/master/minialldrv.config > .config
           make defconfig
       - name: Make download
         run: |
